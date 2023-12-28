@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title - Cricket Info Web</title>
+</head>
+<body>
+    <header>
+        <h1>Cricket Info Web</h1>
+        <nav>
+            <ul>
+                <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                <!-- Add other navigation links as needed -->
+            </ul>
+        </nav>
+    </header>
+
+    <div id="partial-view-container" style="background-color: blue; color: white; text-align: center;">
+        @Html.Partial("_LogoPartialView")
+    </div>
+
+    <div id="page-content" style="background-color: green;">
+        @RenderBody()
+    </div>
+
+    <footer style="background-color: lightblue;">
+        <p>All Rights Reserved</p>
+    </footer>
+</body>
+</html>

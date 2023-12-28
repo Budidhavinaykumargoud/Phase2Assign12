@@ -1,0 +1,22 @@
+﻿@model List<Team>
+
+<h2>Team Page</h2>
+<table>
+    <thead>
+        <tr>
+            <th>Team Id</th>
+            <th>Team Name</th>
+            <th>NOWC</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var team in Model)
+        {
+            <tr>
+                <td>@team.TeamId</td>
+                <td>@team.TeamName</td>
+                <td>@team.NOWC</td>
+            </tr>
+        }
+    </tbody>
+</table>
